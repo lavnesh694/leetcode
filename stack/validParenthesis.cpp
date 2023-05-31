@@ -18,9 +18,7 @@ using namespace std;
                 }
    
                 }
-                else{
-                    return false;
-                }
+               
             
         }
         if(ans.empty()) return true;
@@ -31,6 +29,7 @@ int main(){
     cout<<"Enter the string of brackets";
     string s ;
     cin>>s;
-    cout<<isValid(s)?;
+    string p =isValid(s)?"yes the string is valid":"not the string is not valid";;
+    cout<<p;
 
 }
