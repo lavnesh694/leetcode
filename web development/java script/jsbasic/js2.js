@@ -27,9 +27,24 @@ console.log(l1.draw())
 function Rectangle(l1,l2){
     this.length=l1;
     this.breadth=l2;
+    this.color='pink'
     this.draw=function(){console.log("this is a constructior function")}
         // this basically used to show your current object
 }
 
-let l2= new Rectangle(100,200)
+// let l2= new Rectangle(100,200)
+let l2=new Function(){
+    length=l1,
+    breadth=l2,
+    color='pink',
+    draw=function(){console.log("this is a constructior function")}
+    
+}
+l2.color="yellow"
 console.log(l2)
+delete l2.color; // used for deleting a specific property
+console.log(l2)
+
+// constructor
+
+// note that function is also a object the constructor of the object l2 is rectangle but what is the constructor of rectangle (is also a function)
