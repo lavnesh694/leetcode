@@ -21,17 +21,17 @@
   
 }
 .thisone{
-  box-shadow: inset 40px 40px 10px rgb(43, 156, 226), 20px 20px 20px rgb(3, 16, 19), inset 80px 80px 10px rgb(43, 226, 162), inset 130px 130px 10px rgb(160, 67, 210), inset 180px 180px 10px rgb(198, 226, 43), inset 220px 220px 10px rgb(226, 101, 43);
+  box-shadow: inset 40px 40px 10px rgb(7, 7, 7), 20px 20px 20px rgb(3, 16, 19), inset 80px 80px 10px rgb(62, 54, 61), inset 130px 130px 10px rgb(26, 13, 32), inset 180px 180px 10px rgb(83, 40, 59), inset 220px 220px 10px rgb(23, 15, 11);
 }
 .aise{
-  box-shadow: 5px 5px 5px rgb(205, 205, 50);
+  box-shadow: 5px 5px 5px 5px rgb(226, 226, 224);
 }
 .checkbox input{
   position:relative;
   appearance: None;;
   width:25px;
   height:25px;
-  border:2px solid black;
+  border:2px solid yellowgreen;
 }
 .checkbox input:checked:before{
   content:'✓';

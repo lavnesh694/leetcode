@@ -1,4 +1,5 @@
 let slider=document.querySelector('.slider');
+let copy=document.querySelector('.copy');
 let length=document.querySelector('[data-length');
 let upper=document.querySelector('.upper');
 let lower=document.querySelector('[lower');
@@ -8,6 +9,9 @@ let psddisplay=document.querySelector('.psd');
 let datacopy=document.querySelector('[data-copy')
 let indicator=document.querySelector('.indicator')
 let checkbox=document.querySelectorAll('[chk')
+let psg=document.querySelectorAll('.psg')
+
+console.log(copy)
 
 
 
@@ -77,10 +81,12 @@ async function copyContent(){
     }
     // span visible
     datacopy.classList.add("active");
+    copy.classList.remove("active");
     console.log(datacopy.classList)
     // console.log("jfdsnfj");
     setTimeout(() => {
         datacopy.classList.remove("active");
+        copy.classList.add("active");
         // console.log("lk boss ki jai hi")
         
     }, 2000);
@@ -126,13 +132,15 @@ checkbox.forEach( (check) => {
 })
 
 function generate(){
-    
-    if(checkCount==0){
+
+//    
+if(checkCount==0){
         return;
     }
     
     if(passwordlength<checkCount){
         passwordlength=checkCount;
+        
         handleslider();
     }
     password=""
